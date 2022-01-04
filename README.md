@@ -2,7 +2,7 @@
 The following is a TDD Kata, an exercise in coding, refactoring and **test-first**.
 
 ## Description
-Create a program, which, given a valid sequence of bowling rolls, produces the total score for the game.
+Create a program which, given a valid sequence of bowling rolls, produces the total score for the game.
 
 The game consists of 10 frames. In each frame the player has two rolls to knock down 10 pins. The score for the frame is the total number of pins knocked down, plus bonuses for spares and strikes.
 
@@ -21,7 +21,7 @@ Before you start:
 ### Step 1: return the score for a sequence of valid rolls (without bonus points for strikes and spares)
 For example:
 * The sequence of rolls 3 - 5 - 2 - 4 should return a total score of 14;
-* The following sequence of rolls 3 - 2 - 8 - 8 should throw an error (since you cannot knock down more than 10 pins in a single frame).
+* The sequence of rolls 3 - 2 - 8 - 8 should throw an error (since you cannot knock down more than 10 pins in a single frame).
 
 ### Step 2: handle a spare with correct bonus
 A spare is when the player knocks down all 10 pins in two rolls. The bonus for that frame is the number of pins knocked down by the next roll.
@@ -43,4 +43,4 @@ As an example, in the tenth frame:
 
 **IMPORTANT:** Implement the requirements focusing on **writing the best code** you can produce. 
 
-**CODE SUBMISSION:** Add the code to your own Github account and send us the link.
+**CODE SUBMISSION:** Add the code to your own GitHub account and send us the link.
