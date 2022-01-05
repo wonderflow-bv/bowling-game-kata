@@ -24,18 +24,26 @@ For example:
 * The sequence of rolls 3 - 2 - 8 - 8 should throw an error (since you cannot knock down more than 10 pins in a single frame).
 
 ### Step 2: handle a spare with correct bonus
-A spare is when the player knocks down all 10 pins in two rolls. The bonus for that frame is the number of pins knocked down by the next roll. So in frame 3 above, the score is 10 (the total number knocked down) plus a bonus of 5 (the number of pins knocked down on the next roll).
+A spare is when the player knocks down all 10 pins in two rolls. The bonus for that frame is the number of pins knocked down by the next roll.
+
+Consider the following scorecard (where "/" identifies a spare and "X" a strike):
+
+![Scorecard](scorecard.png)
+
+In frame 2 above, the score is 10 (the total number of pins knocked down) plus a bonus of 5 (the number of pins knocked down on the next roll).
 
 ### Step 3: handle a strike with correct bonus
 A strike is when the player knocks down all 10 pins on his first roll. The frame is then completed with a single roll. The bonus for that frame is the value of the next two rolls.
 
+Consider the same scorecard above. In frame 1, the score is 10 (the total number of pins knocked down) plus a bonus of 10 (the number of pins knocked down on the next two rolls).
+
 ### Step 4: return the correct result for a game of 10 frames
-In the tenth frame a player who rolls a spare or strike is allowed to roll the extra balls to get the bonus points. Hence, the tenth frame has two or three rolls; it's different from all the other frames.
+In the tenth frame a player who rolls a spare or strike is allowed to roll the extra balls to get the bonus points. The tenth frame has two or three rolls; it's different from all the other frames.
 
 Here are some examples (rolls in the tenth frame):
 * The player rolls 5 - 2 and the game ends (5 - 2 => score is 7);
 * The player makes a spare and one extra roll is allowed (8 - 2 - 3 => score is 13);
-* The player makes a strike and two extra rolls are allowed (10 - 6 - 3 => score is 19).
+* The player makes a strike and two extra rolls are allowed (10 - 6 - 3 => score is 19). Keep in mind that the sequence 10 - 6 - 8 is not valid, unlike the sequence 10 - 10 - 5, because pins are not reset unless a strike is made. 
 
 ## General requirements
 - **We would love to see your submission written in JavaScript**. Although, you can use whatever language and framework you want. Use something that you know well.
@@ -44,3 +52,4 @@ Here are some examples (rolls in the tenth frame):
 **IMPORTANT:** Implement the requirements focusing on **writing the best code** you can produce. 
 
 **CODE SUBMISSION:** Add the code to your own GitHub account and send us the link.
+
