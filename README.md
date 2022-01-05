@@ -24,18 +24,18 @@ For example:
 * The sequence of rolls 3 - 2 - 8 - 8 should throw an error (since you cannot knock down more than 10 pins in a single frame).
 
 ### Step 2: handle a spare with correct bonus
-A spare is when the player knocks down all 10 pins in two rolls. The bonus for that frame is the number of pins knocked down by the next roll.
+A spare is when the player knocks down all 10 pins in two rolls. The bonus for that frame is the number of pins knocked down by the next roll. So in frame 3 above, the score is 10 (the total number knocked down) plus a bonus of 5 (the number of pins knocked down on the next roll).
 
 ### Step 3: handle a strike with correct bonus
 A strike is when the player knocks down all 10 pins on his first roll. The frame is then completed with a single roll. The bonus for that frame is the value of the next two rolls.
 
 ### Step 4: return the correct result for a game of 10 frames
-In the tenth frame a player who rolls a spare or strike is allowed the extra rolls needed to get the bonus points. However no more than three balls can be rolled in the tenth frame.
+In the tenth frame a player who rolls a spare or strike is allowed to roll the extra balls to get the bonus points. Hence, the tenth frame has two or three rolls; it's different from all the other frames.
 
-As an example, in the tenth frame:
-* The player rolls 5 - 2 and the game ends (5 - 2 => 7);
-* The player makes a spare and one extra roll is allowed (8 - 2 - 3 => 13);
-* The player makes a strike and two extra rolls are allowed (10 - 6 - 7 => 23).
+Here are some examples (rolls in the tenth frame):
+* The player rolls 5 - 2 and the game ends (5 - 2 => score is 7);
+* The player makes a spare and one extra roll is allowed (8 - 2 - 3 => score is 13);
+* The player makes a strike and two extra rolls are allowed (10 - 6 - 3 => score is 19).
 
 ## General requirements
 - **We would love to see your submission written in JavaScript**. Although, you can use whatever language and framework you want. Use something that you know well.
