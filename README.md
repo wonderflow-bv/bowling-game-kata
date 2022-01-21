@@ -1,7 +1,17 @@
 # Bowling Game Kata
-The following is a TDD Kata, an exercise in coding, refactoring and **test-first**.
+The following is a TDD Kata, an exercise in coding, refactoring and test-first.
 
-## Description
+The goal is to solve the exercise in your own best way, showing us how you approch problems and your workflow. We may give more value to how you reached the solution with respect to the solution itself.
+
+## Before you start
+* Try not to read ahead.
+* Do one task at a time. The trick is to learn to work incrementally.
+* Make sure you only test for correct inputs. There is no need to test for invalid inputs for this kata.
+* Commit your code on GitHub or any other SCM repository you prefer.
+* Release your work under an OSI-approved open-source license of your choice.
+* Disable Copylot and don't watch others solutions while trying to solve this kata, you'll make it harder for us to asses your skills.
+
+## The Kata
 Create a program which, given a valid sequence of bowling rolls, produces the total score for the game.
 
 The game consists of 10 frames. In each frame the player has two rolls to knock down 10 pins. The score for the frame is the total number of pins knocked down, plus bonuses for spares and strikes.
@@ -11,12 +21,6 @@ Implement a solution with at least the following two methods:
 
 * `roll(int)` is called each time the player rolls a ball. The argument is the number of pins knocked down (0 to 10);
 * `getScore()` returns the total score for that game.
-
-Before you start:
-* Try not to read ahead, do one task at a time (the idea is to work incrementally);
-* You may use whatever programming language you prefer;
-* You should commit your code on GitHub or any other SCM repository you prefer. Best would be to simply fork this repository;
-* Remember to refactor your code to improve modularity & readability.
 
 ### Step 1: return the score for a sequence of valid rolls (without bonus points for strikes and spares)
 For example:
