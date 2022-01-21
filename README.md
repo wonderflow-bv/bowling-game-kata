@@ -52,12 +52,11 @@ Here are some examples (rolls in the tenth frame):
 * The player makes a strike and two extra rolls are allowed (10 - 6 - 3 => score is 19). Keep in mind that the sequence 10 - 6 - 8 is not valid, unlike the sequence 10 - 10 - 5, because pins are not reset unless a strike is made. 
 
 ## General requirements
-- **We would love to see your submission written in JavaScript**. Although, you can use whatever language and framework you want. Use something that you know well.
-- **Provide a README with instructions** on how to compile and run the application.
+We would love to see your submission written in JavaScript. Although, you can use whatever language and framework you want. Use something that you know well.
 
-**IMPORTANT:** Implement the requirements focusing on **writing the best code** you can produce. 
+**IMPORTANT:** Provide a README with instructions on how to compile and run the application.
 
-**CODE SUBMISSION:** Add the code to your own GitHub account and send us the link.
+**CODE SUBMISSION:** Add the code to your own Github account and send us the link.
 
 Credits to [Uncle Bob](https://github.com/unclebob) for the original idea.
 
