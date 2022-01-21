@@ -11,16 +11,18 @@ The goal is to solve the exercise in your own best way, showing us how you appro
 * Release your work under an OSI-approved open-source license of your choice.
 * Disable Copylot and don't watch others solutions while trying to solve this kata, you'll make it harder for us to asses your skills.
 
-## The Kata
+## Description
 Create a program which, given a valid sequence of bowling rolls, produces the total score for the game.
 
 The game consists of 10 frames. In each frame the player has two rolls to knock down 10 pins. The score for the frame is the total number of pins knocked down, plus bonuses for spares and strikes.
 
-## Specification
+### Specification
 Implement a solution with at least the following two methods:
 
 * `roll(int)` is called each time the player rolls a ball. The argument is the number of pins knocked down (0 to 10);
 * `getScore()` returns the total score for that game.
+
+## The Kata
 
 ### Step 1: return the score for a sequence of valid rolls (without bonus points for strikes and spares)
 For example:
@@ -56,4 +58,6 @@ Here are some examples (rolls in the tenth frame):
 **IMPORTANT:** Implement the requirements focusing on **writing the best code** you can produce. 
 
 **CODE SUBMISSION:** Add the code to your own GitHub account and send us the link.
+
+Credits to [Uncle Bob](https://github.com/unclebob) for the original idea.
 
