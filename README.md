@@ -1,4 +1,4 @@
-# Docker Kata
+# Bowling Game Kata
 The following is a TDD Kata, an exercise in coding, refactoring and test-first.
 
 The goal is to solve the exercise in your own best way, showing us how you approch problems and your workflow. We may give more value to how you reached the solution with respect to the solution itself.
